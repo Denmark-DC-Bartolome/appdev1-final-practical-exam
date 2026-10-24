@@ -1,0 +1,31 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.leftSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.rightSection {
+  position: absolute;
+  inset: 0;
+}
+
+.blossom {
+  position: absolute;
+  top: 6.525vh;
+  left: 48vw;
+  display: block;
+  width: 53.9vw;
+  height: 89.83vh;
+  object-fit: contain;
+}
