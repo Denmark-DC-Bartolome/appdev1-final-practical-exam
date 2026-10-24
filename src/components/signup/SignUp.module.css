@@ -9,10 +9,18 @@
 
 .leftSection {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
+  top: 19.39vh;
+  left: 11.39vw;
+  width: 26.3vw;
+}
+
+.title {
+  margin: 0;
+  color: #000;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.65;
 }
 
 .rightSection {
@@ -22,8 +30,8 @@
 
 .blossom {
   position: absolute;
-  top: 6.525vh;
-  left: 48vw;
+  top: 7.485vh;
+  left: 42.32vw;
   display: block;
   width: 53.9vw;
   height: 89.83vh;
