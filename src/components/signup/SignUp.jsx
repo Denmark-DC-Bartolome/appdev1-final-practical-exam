@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import styles from './SignUp.module.css'
 import blossomFlower from '../../assets/blossom-flower.svg'
+import googleLogo from '../../assets/icons-google-logo.svg'
+import appleLogo from '../../assets/icons-apple-logo.svg'
 
 export default function SignUp() {
   const [formValues, setFormValues] = useState({
@@ -85,6 +87,23 @@ export default function SignUp() {
             Signup
           </button>
         </form>
+        <div className={styles.divider} aria-label="Or">
+          <span>Or</span>
+        </div>
+        <div className={styles.socialButtons}>
+          <button className={styles.socialButton} type="button">
+            <img src={googleLogo} alt="" />
+            <span>Sign in with Google</span>
+          </button>
+          <button className={styles.socialButton} type="button">
+            <img src={appleLogo} alt="" />
+            <span>Sign in with Apple</span>
+          </button>
+        </div>
+        <p className={styles.accountPrompt}>
+          Have an account?{' '}
+          <a href="#signin">Sign In</a>
+        </p>
       </section>
       <section className={styles.rightSection} aria-label="Blossom image">
         <img
