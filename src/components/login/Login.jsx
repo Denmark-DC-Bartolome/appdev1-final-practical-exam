@@ -92,8 +92,8 @@ export default function Login() {
           </button>
         </div>
         <p className={styles.accountPrompt}>
-          Have an account?{' '}
-          <a href="#signin">Sign In</a>
+          Don’t have an account?{' '}
+          <a href="/signup">Sign Up</a>
         </p>
       </section>
       <section className={styles.rightSection} aria-label="Blossom image">
