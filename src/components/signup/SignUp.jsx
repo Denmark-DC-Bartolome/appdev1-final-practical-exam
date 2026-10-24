@@ -102,7 +102,7 @@ export default function SignUp() {
         </div>
         <p className={styles.accountPrompt}>
           Have an account?{' '}
-          <a href="#signin">Sign In</a>
+          <a href="/login">Sign In</a>
         </p>
       </section>
       <section className={styles.rightSection} aria-label="Blossom image">

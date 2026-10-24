@@ -4,7 +4,7 @@
   height: 100vh;
   height: 100svh;
   overflow: hidden;
-  background: #fff;
+  background: var(--color-surface);
 }
 
 .leftSection {
@@ -16,10 +16,10 @@
 
 .title {
   margin: 0;
-  color: #000;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: 500;
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-medium);
   line-height: 1.65;
 }
 
@@ -36,9 +36,9 @@
   height: 58px;
   flex-direction: column;
   align-items: flex-start;
-  color: #000;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-weight: 500;
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-medium);
 }
 
 .nameField {
@@ -54,32 +54,32 @@
 }
 
 .field label {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: var(--font-size-label);
+  line-height: var(--space-19);
 }
 
 .field input {
   box-sizing: border-box;
   width: 100%;
-  height: 32px;
-  padding: 0 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
+  height: var(--size-control-height);
+  padding: 0 var(--space-10);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
   outline: none;
-  color: #000;
+  color: var(--color-text);
   font-family: inherit;
-  font-size: 10px;
-  font-weight: 500;
+  font-size: var(--font-size-input);
+  font-weight: var(--font-weight-medium);
 }
 
 .field input::placeholder {
-  color: #d9d9d9;
+  color: var(--color-placeholder);
   opacity: 1;
 }
 
 .field input:focus-visible {
-  outline: 2px solid #3a5b22;
-  outline-offset: 2px;
+  outline: var(--focus-ring-width) solid var(--color-primary);
+  outline-offset: var(--focus-ring-offset);
 }
 
 .terms {
@@ -89,19 +89,19 @@
   display: flex;
   width: 145px;
   align-items: flex-start;
-  gap: 6px;
-  color: #000;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  line-height: 15px;
+  gap: var(--space-6);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--space-15);
 }
 
 .terms input {
   width: 10px;
   height: 10px;
-  margin: 2px 0 0;
-  accent-color: #000;
+  margin: var(--space-2) 0 0;
+  accent-color: var(--color-text);
 }
 
 .underlined {
@@ -114,19 +114,19 @@
   left: 0;
   width: 100%;
   height: 32px;
-  border: 1px solid #3a5b22;
-  border-radius: 10px;
-  background: #3a5b22;
-  color: #fff;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-control);
+  background: var(--color-primary);
+  color: var(--color-surface);
   cursor: pointer;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-action);
+  font-weight: var(--font-weight-bold);
 }
 
 .submitButton:focus-visible {
-  outline: 2px solid #000;
-  outline-offset: 2px;
+  outline: var(--focus-ring-width) solid var(--color-text);
+  outline-offset: var(--focus-ring-offset);
 }
 
 .divider {
@@ -138,16 +138,16 @@
   height: 15px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#f5f5f5, #f5f5f5) center / 100% 2px no-repeat;
-  color: #000;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-size: 9px;
-  font-weight: 500;
+  background: linear-gradient(var(--color-divider), var(--color-divider)) center / 100% var(--focus-ring-width) no-repeat;
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
 }
 
 .divider span {
-  padding: 0 6px;
-  background: #fff;
+  padding: 0 var(--space-6);
+  background: var(--color-surface);
 }
 
 .socialButtons {
@@ -157,39 +157,39 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 23px;
+  gap: var(--space-23);
 }
 
 .socialButton {
   display: inline-flex;
   width: calc((100% - 23px) / 2);
-  min-height: 40px;
+  min-height: var(--size-social-button-height);
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 4px 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  background: #fff;
-  color: #000;
+  gap: var(--space-10);
+  padding: var(--space-4) var(--space-10);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  color: var(--color-text);
   cursor: pointer;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-medium);
   white-space: nowrap;
 }
 
 .socialButton img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: var(--size-social-icon);
+  height: var(--size-social-icon);
   object-fit: contain;
 }
 
 .socialButton:focus-visible,
 .accountPrompt a:focus-visible {
-  outline: 2px solid #3a5b22;
-  outline-offset: 2px;
+  outline: var(--focus-ring-width) solid var(--color-primary);
+  outline-offset: var(--focus-ring-offset);
 }
 
 .accountPrompt {
@@ -198,16 +198,16 @@
   left: 0;
   width: 100%;
   margin: 0;
-  color: #000;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 23px;
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--space-23);
   text-align: center;
 }
 
 .accountPrompt a {
-  color: #0f3dde;
+  color: var(--color-link);
   text-decoration: none;
 }
 
