@@ -6,10 +6,9 @@ import appleLogo from '../../assets/icons-apple-logo.svg'
 
 export default function Login() {
   const [formValues, setFormValues] = useState({
-    name: '',
     email: '',
     password: '',
-    agreed: false,
+    rememberMe: false,
   })
 
   function updateField(event) {
@@ -34,23 +33,10 @@ export default function Login() {
           Enter your Credentials to access your account
         </p>
         <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={`${styles.field} ${styles.nameField}`}>
-            <label htmlFor="signup-name">Name</label>
-            <input
-              id="signup-name"
-              name="name"
-              type="text"
-              placeholder="Enter your name"
-              autoComplete="name"
-              value={formValues.name}
-              onChange={updateField}
-              required
-            />
-          </div>
           <div className={`${styles.field} ${styles.emailField}`}>
-            <label htmlFor="signup-email">Email address</label>
+            <label htmlFor="login-email">Email address</label>
             <input
-              id="signup-email"
+              id="login-email"
               name="email"
               type="email"
               placeholder="Enter your email"
@@ -61,9 +47,14 @@ export default function Login() {
             />
           </div>
           <div className={`${styles.field} ${styles.passwordField}`}>
-            <label htmlFor="signup-password">Password</label>
+            <div className={styles.passwordLabelRow}>
+              <label htmlFor="login-password">Password</label>
+              <button className={styles.forgotPassword} type="button">
+                forgot password
+              </button>
+            </div>
             <input
-              id="signup-password"
+              id="login-password"
               name="password"
               type="password"
               placeholder="Name"
@@ -73,21 +64,18 @@ export default function Login() {
               required
             />
           </div>
-          <label className={styles.terms} htmlFor="signup-terms">
+          <label className={styles.terms} htmlFor="remember-me">
             <input
-              id="signup-terms"
-              name="agreed"
+              id="remember-me"
+              name="rememberMe"
               type="checkbox"
-              checked={formValues.agreed}
+              checked={formValues.rememberMe}
               onChange={updateField}
-              required
             />
-            <span>
-              I agree to the <span className={styles.underlined}>terms &amp; policy</span>
-            </span>
+            <span>Remember for 30 days</span>
           </label>
           <button className={styles.submitButton} type="submit">
-            Signup
+            Login
           </button>
         </form>
         <div className={styles.divider} aria-label="Or">

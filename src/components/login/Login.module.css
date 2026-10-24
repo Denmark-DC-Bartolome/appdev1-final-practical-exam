@@ -37,8 +37,11 @@
 }
 
 .form {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 583px;
 }
 
 .field {
@@ -54,21 +57,25 @@
   font-weight: 500;
 }
 
-.nameField {
-  top: 58px;
-}
-
 .emailField {
-  top: 135px;
+  top: 139px;
 }
 
 .passwordField {
-  top: 213px;
+  top: 218px;
 }
 
 .field label {
   font-size: 14px;
   line-height: 19px;
+}
+
+.passwordLabelRow {
+  display: flex;
+  width: 100%;
+  height: 19px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .field input {
@@ -97,10 +104,10 @@
 
 .terms {
   position: absolute;
-  top: 291px;
+  top: 296px;
   left: 0;
   display: flex;
-  width: 145px;
+  width: 180px;
   align-items: flex-start;
   gap: 6px;
   color: #000;
@@ -121,9 +128,23 @@
   text-decoration: underline;
 }
 
+.forgotPassword {
+  width: 83px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #0c2a92;
+  cursor: pointer;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+}
+
 .submitButton {
   position: absolute;
-  top: 335px;
+  top: 332px;
   left: 0;
   width: 100%;
   height: 32px;
@@ -144,7 +165,7 @@
 
 .divider {
   position: absolute;
-  top: 483px;
+  top: 402px;
   left: 3px;
   display: flex;
   width: min(400px, 100%);
@@ -165,7 +186,7 @@
 
 .socialButtons {
   position: absolute;
-  top: 558px;
+  top: 505px;
   left: 0;
   display: flex;
   width: 100%;
@@ -207,7 +228,7 @@
 
 .accountPrompt {
   position: absolute;
-  top: 615px;
+  top: 560px;
   left: 0;
   width: 100%;
   margin: 0;
