@@ -28,8 +28,11 @@ export default function Login() {
     <main className={styles.page}>
       <section className={styles.leftSection} aria-labelledby="login-title">
         <h1 className={styles.title} id="login-title">
-          Get Started Now
+          Welcome back!
         </h1>
+        <p className={styles.subtitle}>
+          Enter your Credentials to access your account
+        </p>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={`${styles.field} ${styles.nameField}`}>
             <label htmlFor="signup-name">Name</label>
