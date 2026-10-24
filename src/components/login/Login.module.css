@@ -1,0 +1,241 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.leftSection {
+  position: absolute;
+  top: 19.39vh;
+  left: 11.39vw;
+  width: 26.3vw;
+}
+
+.title {
+  margin: 0;
+  color: #000;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+}
+
+.field {
+  position: absolute;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 58px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.nameField {
+  top: 58px;
+}
+
+.emailField {
+  top: 135px;
+}
+
+.passwordField {
+  top: 213px;
+}
+
+.field label {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.field input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  outline: none;
+  color: #000;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.field input::placeholder {
+  color: #d9d9d9;
+  opacity: 1;
+}
+
+.field input:focus-visible {
+  outline: 2px solid #3a5b22;
+  outline-offset: 2px;
+}
+
+.terms {
+  position: absolute;
+  top: 291px;
+  left: 0;
+  display: flex;
+  width: 145px;
+  align-items: flex-start;
+  gap: 6px;
+  color: #000;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.terms input {
+  width: 10px;
+  height: 10px;
+  margin: 2px 0 0;
+  accent-color: #000;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.submitButton {
+  position: absolute;
+  top: 335px;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #3a5b22;
+  border-radius: 10px;
+  background: #3a5b22;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.submitButton:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+.divider {
+  position: absolute;
+  top: 483px;
+  left: 3px;
+  display: flex;
+  width: min(400px, 100%);
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#f5f5f5, #f5f5f5) center / 100% 2px no-repeat;
+  color: #000;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.divider span {
+  padding: 0 6px;
+  background: #fff;
+}
+
+.socialButtons {
+  position: absolute;
+  top: 558px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 23px;
+}
+
+.socialButton {
+  display: inline-flex;
+  width: calc((100% - 23px) / 2);
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.socialButton img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.socialButton:focus-visible,
+.accountPrompt a:focus-visible {
+  outline: 2px solid #3a5b22;
+  outline-offset: 2px;
+}
+
+.accountPrompt {
+  position: absolute;
+  top: 615px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: #000;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+}
+
+.accountPrompt a {
+  color: #0f3dde;
+  text-decoration: none;
+}
+
+.rightSection {
+  position: absolute;
+  inset: 0;
+}
+
+.blossom {
+  position: absolute;
+  top: 7.485vh;
+  left: 42.32vw;
+  display: block;
+  width: 53.9vw;
+  height: 89.83vh;
+  object-fit: contain;
+}
+
+@media (max-height: 800px) {
+  .leftSection {
+    top: 10vh;
+  }
+}
+
+@media (max-height: 700px) {
+  .leftSection {
+    top: 8vh;
+    transform: scale(0.84);
+    transform-origin: top left;
+  }
+}
